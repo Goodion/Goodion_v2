@@ -2,18 +2,18 @@
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-14">
-            <div class="flex justify-between items-center">
-                <a class="pr-2 sm:pr-6" href="https://wa.me/79067858470" target="_blank"><img src="{{ asset('img/icon/whatsapp.png') }}" alt=""></a>
-                <a class="pr-2 sm:pr-6" href="https://telegram.im/@i_goodion" target="_blank"><img src="{{ asset('img/icon/telegram.png') }}" alt=""></a>
+            <div class="flex flex-grow items-center inline-block justify-start w-1/3">
+                <a class="pr-2 sm:mr-3" href="https://wa.me/79067858470" target="_blank"><img src="{{ asset('img/icon/whatsapp.png') }}" alt=""></a>
+                <a class="pr-2 sm:mr-3" href="https://telegram.im/@i_goodion" target="_blank"><img src="{{ asset('img/icon/telegram.png') }}" alt=""></a>
                 <a href="viber://chat?number=%2B79257203367" target="_blank">
                     <img src="{{ asset('img/icon/viber.png') }}" alt="">
                 </a>
             </div>
-            <div class="m-auto font-normal text-normal">
-                <a class="text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300" href="tel:84950154321">+7 (495) 015-43-21</a>
+            <div class="m-auto font-medium text-sm">
+                <a class="text-white hover:text-gray-400 hover:border-gray-400 focus:outline-none focus:text-gray-400 focus:border-gray-400" href="tel:84950154321">+7 (495) 015-43-21</a>
             </div>
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <div class="hidden sm:flex sm:items-center sm:ml-6 flex flex-grow items-center inline-block justify-end w-1/3">
                 <x-jet-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -97,7 +97,7 @@
             </div>
 
             <!-- Hamburger -->
-            <div class="-mr-2 flex items-center sm:hidden">
+            <div class="-mr-2 flex items-center sm:hidden flex flex-grow items-center inline-block justify-end w-1/3">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -113,6 +113,18 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                {{ __('About') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('feedback') }}" :active="request()->routeIs('feedback')">
+                {{ __('Feedback') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('delivery_payment') }}" :active="request()->routeIs('delivery_payment')">
+                {{ __('Delivery and payment') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('users_agreement') }}" :active="request()->routeIs('users_agreement')">
+                {{ __('Users agreement') }}
             </x-jet-responsive-nav-link>
         </div>
 

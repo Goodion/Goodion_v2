@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CityCookieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('dashboard');
-//});
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
+Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/feedback', function () {
+    return view('feedback');
+})->name('feedback');
+
+Route::get('/delivery_payment', function () {
+    return view('delivery_payment');
+})->name('delivery_payment');
+
+Route::get('/users_agreement', function () {
+    return view('users_agreement');
+})->name('users_agreement');
+
+Route::post('/city_choice', [CityCookieController::class, 'placeCityCookie']);
+
+//Route::get('/offers_news', 'OffersNewsController@index');
+//
+
+//Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
+//    return view('dashboard');
+//})->name('dashboard');
