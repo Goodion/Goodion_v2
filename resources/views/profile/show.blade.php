@@ -1,8 +1,8 @@
+@section('title', 'Профиль')
+
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Profile') }}
-        </h2>
+        @include('layouts.header')
     </x-slot>
 
     <div>
@@ -40,4 +40,8 @@
             </div>
         </div>
     </div>
+
+    <x-slot name="footer">
+        @include('layouts.footer')
+    </x-slot>
 </x-app-layout>

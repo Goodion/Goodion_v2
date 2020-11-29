@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/favicon-16x16.png') }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>@yield('title') | {{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
 {{--        <link rel="dns-prefetch" href="//fonts.gstatic.com">--}}
@@ -38,18 +38,18 @@
                 @livewire('navigation-dropdown')
             </div>
 
-            <!-- Page Heading -->
             <header>
-{{--                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">--}}
-                <div>
-                    {{ $header }}
-                </div>
+                {{ $header }}
             </header>
 
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
+
+            <footer>
+                {{ $footer }}
+            </footer>
         </div>
 
         @stack('modals')

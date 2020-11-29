@@ -19,7 +19,9 @@ module.exports = {
                 'main-blue': '#7a95c7',
                 'main-orange': '#eac59b',
                 'main-gray': '#f7f7f7',
-            }
+                'main-bg-color': '#f7f7f7'
+            },
+            border: ['hover'],
         },
     },
 

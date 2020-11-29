@@ -1,8 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+<x-app-layout><h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Create Team') }}
         </h2>
+    <x-slot name="header">
+        @include('layouts.header')
     </x-slot>
 
     <div>
@@ -10,4 +10,7 @@
             @livewire('teams.create-team-form')
         </div>
     </div>
+    <x-slot name="footer">
+        @include('layouts.footer')
+    </x-slot>
 </x-app-layout>
