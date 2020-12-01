@@ -122,7 +122,6 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1 text-white">
-            @livewire('city-choice-modal')
             @guest
                 <button class="flex text-white text-sm pl-3">
                     <a class="rounded-full object-cover pr-1 hover:text-gray-400" href="{{ route('register') }}">{{ __('Register') }}</a>

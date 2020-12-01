@@ -1,10 +1,3 @@
-$(document).ready(function(){
-    $(".menu-btn-top").on('click',function(){
-        $(this).toggleClass("is-active");
-        $(".munu-underTop ul").toggleClass("menu-op");
-    });
-});
-
 // Dadata city autocompleter
 var token = "23c25eff9726254458ac713e8a6d9fab4ab1c4b9";
 var $city = $("#city");

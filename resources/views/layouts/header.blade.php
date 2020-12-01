@@ -2,18 +2,17 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-28">
             <div class="hidden sm:flex flex-grow items-center inline-block justify-start w-1/3">
-                @livewire('city-choice-modal')
+                <img src="/img/icon/pin.png" alt="">
+                <a class="ml-2 border-b border-main-black select-none no-outline" href="#" role="button" @click.prevent="cityChoiceModalOpen = true">
+                    {{ dd($city) }}
+                    {{ $city ?? 'Ваш город'}}
+                </a>
             </div>
             <div class="flex flex-grow-0 justify-between items-center">
                 <a href="/"><img src="/img/logo.png" alt=""></a>
             </div>
             <div class="flex flex-grow items-center justify-end w-1/3">
                 <a href="/cart"><img src="/img/icon/supermarket.png" alt=""></a>
-                <button class="hamburger hamburger--collapse menu-btn-top" type="button">
-                  <span class="hamburger-box ">
-                    <span class="hamburger-inner"></span>
-                  </span>
-                </button>
             </div>
         </div>
     </div>
