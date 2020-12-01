@@ -1,12 +1,13 @@
 <?php
 
+use App\Http\Livewire\About;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/about', \App\Http\Livewire\About::class)->name('about');
+Route::get('/about', About::class)->name('about');
 
 Route::get('/feedback', \App\Http\Livewire\Feedback::class)->name('feedback');
 

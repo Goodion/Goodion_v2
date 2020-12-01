@@ -19,19 +19,14 @@ class CityChoiceModal extends Component
     {
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
+        $this->emit('cityUpdated', $this->city);
         $this->dispatchBrowserEvent('close-modal');
         return back();
-    }
-
-    public function getCityCookie($city)
-    {
-        return cookie('city', $city, 60*60*24*31);
     }
 
     public function mount()
     {
         $this->bigCities = getBigCities();
-        $this->city = Cookie::get('city') ? Cookie::get('city') : null;
     }
 
     public function render()
