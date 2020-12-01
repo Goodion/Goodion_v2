@@ -2,17 +2,25 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Support\Facades\Cookie;
 use Livewire\Component;
+
 
 class CityChoiceModal extends Component
 {
     public $bigCities;
     public $city;
 
+    protected $rules = [
+        'city' => 'required|string'
+    ];
+
     public function setCurrentCity()
     {
-        dd($this->city);
-        $this->placeCityCookie($this->city);
+        $this->validate();
+        Cookie::queue('city', $this->city, 60*60*24*31);
+        $this->dispatchBrowserEvent('close-modal');
+        return back();
     }
 
     public function getCityCookie($city)
@@ -20,15 +28,10 @@ class CityChoiceModal extends Component
         return cookie('city', $city, 60*60*24*31);
     }
 
-    public function placeCityCookie($city)
-    {
-        $cookie = cookie('city', $city, 60*60*24*31);
-        return back()->cookie($cookie);
-    }
-
     public function mount()
     {
         $this->bigCities = getBigCities();
+        $this->city = Cookie::get('city') ? Cookie::get('city') : null;
     }
 
     public function render()

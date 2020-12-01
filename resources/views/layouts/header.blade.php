@@ -1,7 +1,9 @@
 <div class="container xl:px-13 mx-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-28">
-            @livewire('city-choice-modal')
+            <div class="hidden sm:flex flex-grow items-center inline-block justify-start w-1/3">
+                @livewire('city-choice-modal')
+            </div>
             <div class="flex flex-grow-0 justify-between items-center">
                 <a href="/"><img src="/img/logo.png" alt=""></a>
             </div>
@@ -17,8 +19,8 @@
     </div>
 </div>
 <div class="container xl:px-13 mx-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-opacity-40">
-        <div class="hidden justify-center space-x-8 sm:-my-px sm:ml-10 sm:flex">
+    <div class="max-w-7xl mx-auto sm:px-0 md:px-6 lg:px-8 border-t border-opacity-40">
+        <div class="hidden justify-center text-center space-x-8 sm:-my-px sm:flex">
             <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
             {{ __('Dashboard') }}
             </x-jet-nav-link>
