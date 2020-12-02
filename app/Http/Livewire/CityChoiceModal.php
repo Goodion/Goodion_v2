@@ -15,11 +15,15 @@ class CityChoiceModal extends Component
         'city' => 'required|string'
     ];
 
+    public function updated()
+    {
+        $this->emit('cityUpdated', $this->city);
+    }
+
     public function setCurrentCity()
     {
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
-        $this->emit('cityUpdated', $this->city);
         $this->dispatchBrowserEvent('close-modal');
         return back();
     }
