@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/about', About::class)->name('about');
 
-Route::get('/feedback', \App\Http\Livewire\Feedback::class)->name('feedback');
+Route::get('/feedback', \App\Http\Livewire\FeedbackForm::class)->name('feedback');
 
 Route::get('/delivery_payment', \App\Http\Livewire\DeliveryPayment::class)->name('delivery_payment');
 
