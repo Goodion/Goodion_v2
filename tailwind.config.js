@@ -27,7 +27,10 @@ module.exports = {
                 'sand-dark': '#986832',
                 'main-bg-color': '#f7f7f7'
             },
-            border: ['hover']
+            border: ['hover'],
+            backgroundImage: theme => ({
+                'green-arrow': "url('/img/green_arrow.svg')",
+            })
         },
     },
 
