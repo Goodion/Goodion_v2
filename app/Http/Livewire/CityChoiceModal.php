@@ -24,7 +24,7 @@ class CityChoiceModal extends Component
     {
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
-        $this->dispatchBrowserEvent('close-modal');
+        $this->dispatchBrowserEvent('close-city-choice-modal');
         return back();
     }
 

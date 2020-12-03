@@ -2,7 +2,7 @@
 
 <div class="bg-main-bg-color">
     <div class="container xl:px-13 mx-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-main-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
                 <h1 class="text-center font-bold text-3xl pt-10">Акции</h1>
                 @foreach($offers as $offer)
                     <div class="mt-5 pb-15">

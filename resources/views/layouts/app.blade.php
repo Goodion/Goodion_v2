@@ -31,12 +31,13 @@
     </head>
     <body class="font-sans antialiased"
           x-data="{ 'cityChoiceModalOpen': false }"
-          x-on:close-modal.window="cityChoiceModalOpen = false"
+          x-on:close-city-choice-modal.window="cityChoiceModalOpen = false"
+          x-bind:class="{ 'overflow-hidden': cityChoiceModalOpen }"
     >
         @livewire('city-choice-modal')
 
         <div class="min-h-screen">
-            <div class="bg-main-black">
+            <div class="bg-graphite">
                 @livewire('navigation-dropdown')
             </div>
 

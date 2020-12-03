@@ -2,7 +2,7 @@
 
 <div class="bg-main-bg-color">
     <div class="container xl:px-13 mx-auto">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-main-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
             <div class="pt-15">
                 <h2 class="font-bold text-xl">Мы доставляем…</h2>
                 <h3 class="font-semibold underline pl-3 my-3 text-lg">Вам домой или на работу – курьером</h3>

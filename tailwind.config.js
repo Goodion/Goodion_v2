@@ -4,30 +4,41 @@ module.exports = {
     purge: [
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
+        './resources/views/**/*.blade.php'
     ],
 
     theme: {
         extend: {
             fontFamily: {
-                // sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 sans: ['Montserrat', ...defaultTheme.fontFamily.sans]
             },
             colors: {
-                'main-black': '#434343',
-                'main-green': '#b6c63b',
-                'main-blue': '#7a95c7',
-                'main-orange': '#eac59b',
-                'main-gray': '#f7f7f7',
+                'graphite-light': '#a1a1a1',
+                'graphite': '#434343',
+                'graphite-dark': '#323232',
+                'forest-light': '#d4e36b',
+                'forest': '#b6c63b',
+                'forest-dark': '#748113',
+                'sky-light': '#a1b8e3',
+                'sky': '#7a95c7',
+                'sky-dark': '#284781',
+                'sand-light': '#f4d7b7',
+                'sand': '#eac59b',
+                'sand-dark': '#986832',
                 'main-bg-color': '#f7f7f7'
             },
-            border: ['hover'],
+            border: ['hover']
         },
     },
 
     variants: {
         opacity: ['responsive', 'hover', 'focus', 'disabled'],
+        outline: ["focus"]
     },
 
-    plugins: [require('@tailwindcss/ui')],
+    plugins: [
+        // require('@tailwindcss/forms'),
+        // require('@tailwindcss/typography'),
+        // require('@tailwindcss/aspect-ratio')
+    ],
 };

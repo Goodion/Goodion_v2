@@ -1,7 +1,7 @@
 @section('title', 'О нас')
     <div class="bg-main-bg-color">
         <div class="container xl:px-13 mx-auto">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-main-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
                 <div class="flex justify-center">
                     <h1 class="text-center font-bold text-3xl my-28">Чем мы занимаемся</h1>
                 </div>
@@ -56,7 +56,7 @@
                         <div class="w-3/4 mx-auto sm:mb-6 md:mb-0 md:w-2/4 md:mr-3">
                             <img class="md:flex-shrink-0" src="/img/handcraft.png" alt="handcraft">
                         </div>
-                        <div class="flex bg-main-green w-3/4 mx-auto md:w-2/4 md:ml-3">
+                        <div class="flex bg-forest w-3/4 mx-auto md:w-2/4 md:ml-3">
                             <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
                                 Итак, первое направление,
                                 с которого начался Goodion – это уникальные вещи ручной работы от талантливых мастеров
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col md:flex-row mx-auto pb-6">
-                        <div class="flex bg-main-orange sm:mb-6 md:mb-0 w-3/4 mx-auto md:w-2/4 md:mr-3">
+                        <div class="flex bg-sand sm:mb-6 md:mb-0 w-3/4 mx-auto md:w-2/4 md:mr-3">
                             <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
                                 Отдельная история – это интересные штуки, полезные приспособления, всё новое и необычное. Помните спиннеры?
                                 Помните гироскутеры? Мы ищем и находим именно те вещи, которые стремительно врываются в моду. Сегодня вы покупаете их
@@ -82,7 +82,7 @@
                         <div class="w-3/4 mx-auto sm:mb-6 md:mb-0 md:w-2/4 md:mr-3">
                             <img class="md:flex-shrink-0" src="/img/sales.png" alt="handcraft">
                         </div>
-                        <div class="flex bg-main-blue w-3/4 mx-auto md:w-2/4 md:ml-3">
+                        <div class="flex bg-sky w-3/4 mx-auto md:w-2/4 md:ml-3">
                             <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
                                 Наконец, именно здесь мы собираем для вас специальные предложения, а также акции и распродажи
                                 напрямую от поставщиков, некоторые из которых становятся нашими партнёрами. От техники

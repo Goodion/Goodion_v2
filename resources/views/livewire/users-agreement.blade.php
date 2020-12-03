@@ -1,9 +1,4 @@
 @section('title', 'Пользовательское соглашение')
-
-<x-slot name="header">
-    @include('layouts.header')
-</x-slot>
-
 <div class="bg-main-bg-color">
     <div class="container xl:px-13 mx-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-main-black">
@@ -281,7 +276,3 @@
         </div>
     </div>
 </div>
-
-<x-slot name="footer">
-    @include('layouts.footer')
-</x-slot>

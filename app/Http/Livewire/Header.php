@@ -19,7 +19,7 @@ class Header extends Component
 
     public function mount()
     {
-        $this->currentCity = Cookie::get('city') ? Cookie::get('city') : '';
+        $this->currentCity = Cookie::get('city') ? Cookie::get('city') : null;
     }
 
     public function render()

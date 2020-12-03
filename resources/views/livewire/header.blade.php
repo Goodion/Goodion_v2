@@ -4,7 +4,7 @@
             <div class="flex justify-between h-28">
                 <div class="hidden sm:flex flex-grow items-center inline-block justify-start w-1/3">
                     <img src="/img/icon/pin.png" alt="">
-                    <a class="ml-2 border-b border-main-black select-none no-outline" href="#" role="button" @click.prevent="cityChoiceModalOpen = true">
+                    <a class="ml-2 border-b border-graphite select-none no-outline" href="#" role="button" @click.prevent="cityChoiceModalOpen = true">
                         {{ $currentCity ?? 'Ваш город'}}
                     </a>
                 </div>

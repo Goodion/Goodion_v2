@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-main-black container xl:px-13 mx-auto">
+<nav x-data="{ open: false }" class="bg-graphite container xl:px-13 mx-auto">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-14">
@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="m-auto font-medium text-sm">
-                <a class="text-white hover:text-gray-400 hover:border-gray-400 focus:outline-none focus:text-gray-400 focus:border-gray-400" href="tel:84950154321">+7 (495) 015-43-21</a>
+                <a class="text-white hover:border-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:border-graphite-light" href="tel:84950154321">+7 (495) 015-43-21</a>
             </div>
 
             <!-- Settings Dropdown -->
@@ -19,11 +19,11 @@
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                                <button class="flex text-white text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                                <button class="flex text-white text-sm border-2 border-transparent rounded-full focus:outline-none focus:text-graphite-light transition duration-150 ease-in-out">
                                     <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
                             @else
-                                <button class="flex items-center text-sm font-medium text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                                <button class="flex items-center text-sm font-medium text-white hover:text-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:text-graphite-light transition duration-150 ease-in-out">
                                     <div>{{ Auth::user()->name }}</div>
 
                                     <div class="ml-1">
@@ -37,7 +37,7 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
+                            <div class="block px-4 py-2 text-xs graphite">
                                 {{ __('Manage Account') }}
                             </div>
 
@@ -55,7 +55,7 @@
 
                             <!-- Team Management -->
                             @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
-                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                <div class="block px-4 py-2 text-xs graphite">
                                     {{ __('Manage Team') }}
                                 </div>
 
@@ -73,7 +73,7 @@
                                 <div class="border-t border-gray-100"></div>
 
                                 <!-- Team Switcher -->
-                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                <div class="block px-4 py-2 text-xs graphite">
                                     {{ __('Switch Teams') }}
                                 </div>
 
@@ -100,16 +100,16 @@
 
                 @guest
                     <button class="flex text-white text-sm">
-                        <a class="rounded-full object-cover pr-1 hover:text-gray-400" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a class="rounded-full object-cover pr-1 hover:text-graphite-light" href="{{ route('register') }}">{{ __('Register') }}</a>
                         <span>/</span>
-                        <a class="rounded-full object-cover pl-1 hover:text-gray-400" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="rounded-full object-cover pl-1 hover:text-graphite-light" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </button>
                 @endguest
             </div>
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden flex flex-grow items-center inline-block justify-end w-1/3">
-                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md graphite hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -124,9 +124,9 @@
         <div class="pt-2 pb-3 space-y-1 text-white">
             @guest
                 <button class="flex text-white text-sm pl-3">
-                    <a class="rounded-full object-cover pr-1 hover:text-gray-400" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="rounded-full object-cover pr-1 hover:graphite" href="{{ route('register') }}">{{ __('Register') }}</a>
                     <span>/</span>
-                    <a class="rounded-full object-cover pl-1 hover:text-gray-400" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="rounded-full object-cover pl-1 hover:graphite" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </button>
             @endguest
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
@@ -187,7 +187,7 @@
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                     <div class="border-t border-gray-200"></div>
 
-                    <div class="block px-4 py-2 text-xs text-gray-400">
+                    <div class="block px-4 py-2 text-xs graphite">
                         {{ __('Manage Team') }}
                     </div>
 
@@ -203,7 +203,7 @@
                     <div class="border-t border-gray-200"></div>
 
                     <!-- Team Switcher -->
-                    <div class="block px-4 py-2 text-xs text-gray-400">
+                    <div class="block px-4 py-2 text-xs graphite">
                         {{ __('Switch Teams') }}
                     </div>
 
