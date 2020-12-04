@@ -17,7 +17,7 @@
                     <p class="mb-7">Мы работаем со всеми основными курьерскими компаниями – СДЭК, IML, Boxberry и другими.</p>
                     <p>Практически в любом городе России доступно большое количество точек самовывоза – выберите самую удобную!</p>
                 </div>
-                <div class="w-1/2 flex flex-wrap justify-around mb-10">
+                <div class="w-1/2 flex flex-wrap justify-around mb-10 md:mb-16">
                     <div class="my-auto mr-7">
                         <img src="/img/delivery_companies_logos/iml.png" alt="iml">
                     </div>
@@ -28,7 +28,7 @@
                         <img src="/img/delivery_companies_logos/boxberry.png" alt="boxberry">
                     </div>
                 </div>
-                <div class="w-1/2 flex flex-wrap justify-around mb-10">
+                <div class="w-1/2 flex flex-wrap justify-around mb-10 md:mb-16">
                     <div class="my-auto mr-7">
                         <img src="/img/delivery_companies_logos/dellin.png" alt="dellin">
                     </div>
@@ -40,16 +40,16 @@
                     </div>
                 </div>
                 <h1 class="text-center text-3xl font-bold mb-16 w-full">Оплата</h1>
-                <div class="md:w-1/2 px-7 mb-16">
+                <div class="md:w-1/2 px-7 mb-12">
                     <h2 class="font-bold text-lg text-sky-dark mb-7">Наличными или картой – при получении заказа</h2>
-                    <p class="mt-7 mb-3">
+                    <p class="mt-7 mb-0 md:mb-3">
                         Оплата наличными доступна для всех способов доставки – вы можете оплатить заказ при получении у
                         курьера или в пункте самовывоза.
                     </p>
                 </div>
-                <div class="md:w-1/2 px-6 mb-16">
+                <div class="md:w-1/2 px-6 mb-12">
                     <h3 class="font-bold text-lg text-sand-dark mb-7">Банковским переводом – при оформлении заказа</h3>
-                    <p class="mb-7">
+                    <p class="mb-0 md:mb-7">
                         После подтверждения заказа менеджер выставляет вам счёт и резервирует товар на 3 дня – в течение
                         этого времени необходимо оплатить заказ и сообщить менеджеру.
                     </p>

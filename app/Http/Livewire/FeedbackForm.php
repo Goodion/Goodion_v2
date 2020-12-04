@@ -13,7 +13,7 @@ class FeedbackForm extends Component
 
     protected $rules = [
         'feedback.name' => 'required|min:2',
-        'feedback.phone' => 'nullable|required_without:feedback.email|min:10',
+        'feedback.phone' => 'nullable|digits_between:10,11|required_without:feedback.email',
         'feedback.email' => 'nullable|required_without:feedback.phone|email',
         'feedback.message' => 'required|min:5',
         'feedback.registered' => 'boolean',

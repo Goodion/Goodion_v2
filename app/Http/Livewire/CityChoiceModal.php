@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Illuminate\Support\Facades\Cookie;
 use Livewire\Component;
+use phpDocumentor\Reflection\Types\Collection;
 
 
 class CityChoiceModal extends Component
@@ -20,12 +21,12 @@ class CityChoiceModal extends Component
         $this->emit('cityUpdated', $this->city);
     }
 
-    public function setCurrentCity()
+    public function setCurrentCity() :void
     {
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
         $this->dispatchBrowserEvent('close-city-choice-modal');
-        return back();
+        back();
     }
 
     public function mount()

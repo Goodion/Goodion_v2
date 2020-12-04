@@ -9,7 +9,7 @@
      x-transition:leave-end="opacity-0 transform scale-90"
 >
 
-    <div x-on:click.away="cityChoiceModalOpen = false" class="h-auto p-4 mx-2 text-left bg-white rounded shadow-xl md:max-w-xl md:p-6 lg:p-8 md:mx-0">
+    <div x-on:mousedown.away="cityChoiceModalOpen = false" class="h-auto p-4 mx-2 text-left bg-white rounded shadow-xl md:max-w-xl md:p-6 lg:p-8 md:mx-0">
         <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
             <h3 class="text-lg font-medium leading-6 text-graphite">
                 Выберите Ваш город:
@@ -36,19 +36,20 @@
                     @error('city') <span class="text-sm font-semibold mt-2 text-red-700">{{ $message }}</span> @enderror
                     <div wire:model.defer="city" class="flex flex-row justify-around w-full rounded-md mt-10">
                         <button
-                            wire:click="$refresh"
-                            x-on:click.prevent="cityChoiceModalOpen = false"
-                            class="inline-flex justify-center w-auto px-4 py-2 text-white bg-sand rounded hover:bg-sand-dark"
-                        >
-                            Закрыть
-                        </button>
-                        <button
                             x-on:click="$dispatch('input', city.value)"
                             class="inline-flex justify-center w-auto px-4 py-2 text-white bg-forest rounded hover:bg-forest-dark"
                             type="submit"
                         >
                             Сохранить
                         </button>
+                        <button
+                            wire:click="$refresh"
+                            x-on:click.prevent="cityChoiceModalOpen = false"
+                            class="inline-flex justify-center w-auto px-4 py-2 text-white bg-sand rounded hover:bg-sand-dark"
+                        >
+                            Закрыть
+                        </button>
+
                     </div>
                 </form>
             </div>

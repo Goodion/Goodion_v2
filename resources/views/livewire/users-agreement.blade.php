@@ -2,7 +2,7 @@
 <div class="bg-main-bg-color">
     <div class="container xl:px-13 mx-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-main-black">
-            <h1 class="text-center font-bold text-xl py-15">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h1>
+            <h1 class="text-center font-bold text-xl py-14">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h1>
             <div>
                 <span>г. Москва</span>
                 <div class="text-right">«05» января 2020г.</div>

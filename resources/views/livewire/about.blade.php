@@ -55,7 +55,7 @@
                             <img class="md:flex-shrink-0" src="/img/handcraft.png" alt="handcraft">
                         </div>
                         <div class="flex bg-forest w-3/4 mx-auto md:w-2/4 md:ml-3">
-                            <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
+                            <p class="text-white px-12 md:py-5 md:px-5 lg:py-14 lg:px-12 self-center">
                                 Итак, первое направление,
                                 с которого начался Goodion – это уникальные вещи ручной работы от талантливых мастеров
                                 и дизайнеров. Мы сами ищем создателей шедевров (а иногда
@@ -66,7 +66,7 @@
                     </div>
                     <div class="flex flex-col md:flex-row mx-auto pb-6">
                         <div class="flex bg-sand sm:mb-6 md:mb-0 w-3/4 mx-auto md:w-2/4 md:mr-3">
-                            <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
+                            <p class="text-white py-14 px-12 md:py-5 md:px-5 lg:py-14 lg:px-12 self-center">
                                 Отдельная история – это интересные штуки, полезные приспособления, всё новое и необычное. Помните спиннеры?
                                 Помните гироскутеры? Мы ищем и находим именно те вещи, которые стремительно врываются в моду. Сегодня вы покупаете их
                                 у нас, и только завтра они появляются у всех. С нами вы на шажок опередите время!
@@ -81,7 +81,7 @@
                             <img class="md:flex-shrink-0" src="/img/sales.png" alt="handcraft">
                         </div>
                         <div class="flex bg-sky w-3/4 mx-auto md:w-2/4 md:ml-3">
-                            <p class="text-white py-15 px-12 md:py-5 md:px-5 lg:py-15 lg:px-12 self-center">
+                            <p class="text-white py-14 px-12 md:py-5 md:px-5 lg:py-14 lg:px-12 self-center">
                                 Наконец, именно здесь мы собираем для вас специальные предложения, а также акции и распродажи
                                 напрямую от поставщиков, некоторые из которых становятся нашими партнёрами. От техники
                                 до бытовых товаров и аксессуаров для дома – не тратьте время на поиск и приходите к нам, чтобы
