@@ -1,8 +1,9 @@
 @section('title', 'Обратная связь')
 
 <div class="bg-main-bg-color">
-    <div class="container xl:px-13 mx-auto">
+    <div class="container xl:px-13 mx-auto pt-9">
         <div x-data="{ feedbackForm: true }" @message-sent.window="feedbackForm = false" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
+            <h1 class="text-center text-3xl font-bold mb-16 w-full">Обратная связь</h1>
             <form x-show="feedbackForm" class="pt-15" wire:submit.prevent="sendMessage">
                 @guest
                     <div class="mb-10">

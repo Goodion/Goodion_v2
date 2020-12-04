@@ -1,7 +1,7 @@
 <div class="bg-main-bg-color">
-    <div class="container mx-auto">
+    <div class="container mx-auto pt-9">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
-            <h1 class="text-center font-bold text-3xl py-15">{{ __('Dashboard') }}</h1>
+            <h1 class="text-center text-3xl font-bold mb-16 w-full">{{ __('Dashboard') }}</h1>
             <div class="flex flex-wrap justify-around align-middle">
                 <div class="border-2 border-transparent hover:border-forest transition ease-in-out duration-300 p-5 m-2">
                     <img class="mb-7" src="img/item.png" alt="">

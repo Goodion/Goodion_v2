@@ -1,10 +1,8 @@
 @section('title', 'О нас')
     <div class="bg-main-bg-color">
-        <div class="container xl:px-13 mx-auto">
+        <div class="container xl:px-13 mx-auto pt-9">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-graphite">
-                <div class="flex justify-center">
-                    <h1 class="text-center font-bold text-3xl my-28">Чем мы занимаемся</h1>
-                </div>
+                <h1 class="text-center text-3xl font-bold mb-16 w-full">Чем мы занимаемся</h1>
                 <ul class="text-right font-semibold mb-16">
                     <li>GoodION – это небольшой марткеплейс.</li>
                     <li>Маркетплейс, для которого мы вдумчиво подбираем каждый товар.</li>
