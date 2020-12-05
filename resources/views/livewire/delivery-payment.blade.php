@@ -59,7 +59,7 @@
                     <div class="pr-3">
                         <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left">В настоящий момент окончательная стоимость доставки рассчитывается менеджером при оформлении заказа</p>
                         <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left">Доставка некоторыми транспортными компаниями возможна только со 100% предоплатой заказа</p>
-                        <p class="pl-10 bg-green-arrow bg-no-repeat bg-left">В <span class="font-bold">регионах</span> доставка силами курьерских компаний возможна по согласованию.</p>
+                        <p class="pl-10 bg-green-arrow bg-no-repeat bg-left">В <span class="font-bold">регионах</span> доставка силами курьерских компаний возможна по согласованию</p>
                     </div>
                 </div>
             </div>

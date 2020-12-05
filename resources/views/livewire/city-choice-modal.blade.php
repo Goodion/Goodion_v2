@@ -1,4 +1,4 @@
-<div class="absolute top-0 left-0 flex items-center justify-center w-full h-full" style="background-color: rgba(0,0,0,.5);"
+<div class="absolute z-50 top-0 left-0 flex items-center justify-center w-full h-full" style="background-color: rgba(0,0,0,.5);"
      x-show="cityChoiceModalOpen"
 
      x-transition:enter="transition ease-out duration-150"

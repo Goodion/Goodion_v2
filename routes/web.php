@@ -15,7 +15,9 @@ Route::get('/delivery_payment', \App\Http\Livewire\DeliveryPayment::class)->name
 
 Route::get('/users_agreement', \App\Http\Livewire\UsersAgreement::class)->name('users_agreement');
 
-Route::get('/offers_news', \App\Http\Livewire\OffersNews::class)->name('offers_news');
+Route::get('/offers', \App\Http\Livewire\ShowOffers::class)->name('offers');
+
+Route::get('/news', \App\Http\Livewire\ShowNews::class)->name('news');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 //    return view('dashboard');

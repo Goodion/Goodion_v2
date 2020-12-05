@@ -141,8 +141,11 @@
             <x-jet-responsive-nav-link href="{{ route('delivery_payment') }}" :active="request()->routeIs('delivery_payment')">
                 {{ __('Delivery and payment') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('offers_news') }}" :active="request()->routeIs('offers_news')">
-                {{ __('Offers and news') }}
+            <x-jet-responsive-nav-link href="{{ route('offers') }}" :active="request()->routeIs('offers')">
+                {{ __('Offers') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('news') }}" :active="request()->routeIs('news')">
+                {{ __('News') }}
             </x-jet-responsive-nav-link>
         </div>
 

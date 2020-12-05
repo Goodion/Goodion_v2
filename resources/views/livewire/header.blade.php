@@ -32,9 +32,30 @@
                 <x-jet-nav-link href="{{ route('delivery_payment') }}" :active="request()->routeIs('delivery_payment')">
                     {{ __('Delivery and payment') }}
                 </x-jet-nav-link>
-                <x-jet-nav-link href="{{ route('offers_news') }}" :active="request()->routeIs('offers_news')">
-                    {{ __('Offers and news') }}
-                </x-jet-nav-link>
+                <div
+                    x-data="{ offersNewsDropdown: false}"
+                    x-on:mouseenter="offersNewsDropdown = true"
+                    x-on:mouseleave="offersNewsDropdown = false"
+                    class="relative items-center px-1 pt-5 mb-10 border-transparent hover:border-sand border-t-4 text-sm md:text-base lg:text-lg uppercase font-medium leading-5 text-graphite transition duration-150 ease-in-out"
+                    x-bind:class="{ 'border-forest': $wire.activeMenu === 'news' || $wire.activeMenu === 'offers' }"
+                >
+                    <div class="relative cursor-default z-20 px-1">
+                        {{ __('Offers and news') }}
+                    </div>
+                    <div
+                        x-show="offersNewsDropdown"
+                        class="absolute inset-0"
+                    >
+                        <div class="border-graphite-light text-graphite border transition duration-150 ease-in-out bg-white">
+                            <a href="{{ route('offers') }}" class="block cursor-pointer mt-16 py-5 hover:bg-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'offers' }">
+                                {{ __('Offers') }}
+                            </a>
+                            <a href="{{ route('news') }}" class="block cursor-pointer py-5 hover:bg-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'news' }">
+                                {{ __('News') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
