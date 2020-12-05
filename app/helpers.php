@@ -32,3 +32,25 @@ if (!function_exists('getBigCities')) {
             'Омск', 'Самара', 'Ростов-на-Дону', 'Уфа', 'Красноярск', 'Воронеж', 'Пермь', 'Волгоград', 'Краснодар', 'Саратов', 'Тюмень', 'Тольятти']);
     }
 }
+
+if (!function_exists('normalizePhoneNumber')) {
+    function normalizePhoneNumber($phone) {
+        $normalizedPhone = preg_replace('#[^0-9]#', '', $phone);
+
+        if (strlen($normalizedPhone) == 10) {
+            $normalizedPhone = substr_replace($normalizedPhone, '7', 0, 0);
+        }
+
+        if (strlen($normalizedPhone) == 11 && $normalizedPhone[0] == 8) {
+            $normalizedPhone = substr_replace($normalizedPhone, '7', 0, 1);
+        }
+
+        return $normalizedPhone;
+    }
+}
+
+if (!function_exists('beautifyPhoneNumber')) {
+    function beautifyPhoneNumber($phone) {
+        return preg_replace("#(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})#", "+\\1 (\\2) \\3-\\4-\\5", $phone);
+    }
+}

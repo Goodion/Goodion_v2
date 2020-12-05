@@ -12,12 +12,12 @@
                         @error('feedback.name') <span class="text-red-500 text-sm ml-5">{{ $message }}</span> @enderror
                     </div>
                     <div class="mb-10">
-                        <label class="font-medium" for="email">Введите E-mail</label>
+                        <label class="font-medium" for="email">Введите E-mail...</label>
                         <input wire:model.defer="feedback.email" class="@error('feedback.email') border-red-500 @endError focus:outline-none focus:ring-2 ring-forest border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" id="email" name="email">
                         @error('feedback.email') <span class="text-red-500 text-sm ml-5">{{ $message }}</span> @enderror
                     </div>
                     <div class="mb-10">
-                        <label class="font-medium" for="phone">или номер телефона</label>
+                        <label class="font-medium" for="phone">...или номер мобильного телефона</label>
                         <input wire:model.defer="feedback.phone" class="@error('feedback.phone') border-red-500 @endError focus:outline-none focus:ring-2 ring-forest border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="phone" id="phone" name="phone">
                         @error('feedback.phone') <span class="text-red-500 text-sm ml-5">{{ $message }}</span> @enderror
                     </div>

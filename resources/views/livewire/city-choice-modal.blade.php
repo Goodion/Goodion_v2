@@ -49,7 +49,6 @@
                         >
                             Закрыть
                         </button>
-
                     </div>
                 </form>
             </div>

@@ -21,12 +21,11 @@ class CityChoiceModal extends Component
         $this->emit('cityUpdated', $this->city);
     }
 
-    public function setCurrentCity() :void
+    public function setCurrentCity()
     {
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
         $this->dispatchBrowserEvent('close-city-choice-modal');
-        back();
     }
 
     public function mount()

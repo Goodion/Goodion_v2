@@ -21,6 +21,7 @@ class FeedbackForm extends Component
 
     public function sendMessage()
     {
+        $this->feedback->phone = normalizePhoneNumber($this->feedback->phone);
         $this->validate();
         $this->feedback->save();
         session()->flash('message', 'Сообщение успешно отправлено.');
