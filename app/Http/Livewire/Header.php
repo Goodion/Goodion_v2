@@ -12,13 +12,6 @@ class Header extends Component
     public $currentCity;
     public $activeMenu;
 
-    protected $listeners=['cityUpdated'];
-
-    public function cityUpdated($newCity)
-    {
-        $this->currentCity = $newCity;
-    }
-
     public function mount()
     {
         $this->activeMenu = Route::currentRouteName();

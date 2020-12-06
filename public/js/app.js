@@ -2095,7 +2095,7 @@ $(document).on('turbolinks:load', function () {
     bounds: "city-settlement",
     onSuggestionsFetch: removeNonCity
   });
-  window.addEventListener('close-city-choice-modal', function (event) {
+  window.addEventListener('city-modal-close', function (event) {
     location.reload();
   });
 });

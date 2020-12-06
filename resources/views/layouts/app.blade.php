@@ -30,9 +30,9 @@
         <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@latest/dist/js/jquery.suggestions.min.js"></script>
     </head>
     <body class="font-sans antialiased"
-          x-data="{ 'cityChoiceModalOpen': false }"
-          x-on:close-city-choice-modal.window="cityChoiceModalOpen = false"
-          x-bind:class="{ 'overflow-hidden': cityChoiceModalOpen }"
+          x-data="{ 'modalToggle': false }"
+          x-bind:class="{ 'overflow-hidden': modalToggle }"
+          x-on:modal-toggle.window="modalToggle = ! modalToggle"
     >
         @livewire('city-choice-modal')
 

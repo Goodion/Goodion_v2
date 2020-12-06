@@ -33,7 +33,7 @@ $(document).on('turbolinks:load', function() {
         onSuggestionsFetch: removeNonCity
     });
 
-    window.addEventListener('close-city-choice-modal', event => {
+    window.addEventListener('city-modal-close', event => {
         location.reload();
     })
 });

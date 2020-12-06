@@ -16,16 +16,12 @@ class CityChoiceModal extends Component
         'city' => 'required|string'
     ];
 
-    public function updated()
+    public function setCurrentCity($currentCity)
     {
-        $this->emit('cityUpdated', $this->city);
-    }
-
-    public function setCurrentCity()
-    {
+        $this->city = $currentCity;
         $this->validate();
         Cookie::queue('city', $this->city, 60*60*24*31);
-        $this->dispatchBrowserEvent('close-city-choice-modal');
+        $this->dispatchBrowserEvent('city-modal-close');
     }
 
     public function mount()

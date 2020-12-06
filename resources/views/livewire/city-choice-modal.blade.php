@@ -1,6 +1,11 @@
 <div class="absolute z-50 top-0 left-0 flex items-center justify-center w-full h-full" style="background-color: rgba(0,0,0,.5);"
-     x-show="cityChoiceModalOpen"
+     x-data="{ 'cityModal': false }"
+     x-on:city-modal-open.window="cityModal = open, $dispatch('modal-toggle')"
+     x-on:city-modal-close.window="cityModal = close, $dispatch('modal-toggle')"
+
+     x-show="cityModal"
      x-cloak
+
      x-transition:enter="transition ease-out duration-150"
      x-transition:enter-start="opacity-0 transform scale-90"
      x-transition:enter-end="opacity-100 transform scale-100"
@@ -9,14 +14,14 @@
      x-transition:leave-end="opacity-0 transform scale-90"
 >
 
-    <div x-on:mousedown.away="cityChoiceModalOpen = false" class="h-auto p-4 mx-2 text-left bg-white rounded shadow-xl md:max-w-xl md:p-6 lg:p-8 md:mx-0">
+    <div x-on:mousedown.away="$dispatch('city-modal-close')" class="h-auto p-4 mx-2 text-left bg-white rounded shadow-xl md:max-w-xl md:p-6 lg:p-8 md:mx-0">
         <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
             <h3 class="text-lg font-medium leading-6 text-graphite">
                 Выберите Ваш город:
             </h3>
 
             <div class="mt-2">
-                <form wire:submit.prevent="setCurrentCity">
+                <form>
                     @csrf
                     <div class="flex flex-row flex-wrap border-b border-t border-gray-300 mb-5">
                         @foreach($bigCities as $bigCity)
@@ -34,17 +39,16 @@
                     </h3>
                     <input id="city" type="text" x-ref="currentCity" class="focus:outline-none focus:ring-2 ring-forest border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" name="city" value="{{ old('city') }}" required autocomplete="off" autofocus>
                     @error('city') <span class="text-sm font-semibold mt-2 text-red-700">{{ $message }}</span> @enderror
-                    <div wire:model.defer="city" class="flex flex-row justify-around w-full rounded-md mt-10">
+                    <div class="flex flex-row justify-around w-full rounded-md mt-10">
                         <button
-                            x-on:click="$dispatch('input', city.value)"
+                            x-on:click.prevent="$wire.setCurrentCity(city.value)"
                             class="inline-flex justify-center w-auto px-4 py-2 text-white bg-forest rounded hover:bg-forest-dark"
                             type="submit"
                         >
                             Сохранить
                         </button>
                         <button
-                            wire:click="$refresh"
-                            x-on:click.prevent="cityChoiceModalOpen = false"
+                            x-on:click.prevent="$dispatch('city-modal-close')"
                             class="inline-flex justify-center w-auto px-4 py-2 text-white bg-sand rounded hover:bg-sand-dark"
                         >
                             Закрыть
