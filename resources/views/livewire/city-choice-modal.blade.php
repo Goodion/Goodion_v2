@@ -1,6 +1,6 @@
 <div class="absolute z-50 top-0 left-0 flex items-center justify-center w-full h-full" style="background-color: rgba(0,0,0,.5);"
      x-show="cityChoiceModalOpen"
-
+     x-cloak
      x-transition:enter="transition ease-out duration-150"
      x-transition:enter-start="opacity-0 transform scale-90"
      x-transition:enter-end="opacity-100 transform scale-100"

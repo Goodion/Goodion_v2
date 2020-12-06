@@ -44,6 +44,7 @@
                     </div>
                     <div
                         x-show="offersNewsDropdown"
+                        x-cloak
                         class="absolute inset-0"
                     >
                         <div class="border-graphite-light text-graphite border transition duration-150 ease-in-out bg-white">
