@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div class="m-auto font-medium text-sm">
-                <a class="text-white hover:border-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:border-graphite-light" href="tel:84950154321">+7 (495) 015-43-21</a>
+                <a class="text-white hover:border-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:border-graphite-light" href="{{ config('config.goodion_phone_link') }}">{{ config('config.goodion_phone') }}</a>
             </div>
 
             <!-- Settings Dropdown -->

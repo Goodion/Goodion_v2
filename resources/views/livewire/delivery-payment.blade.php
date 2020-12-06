@@ -8,8 +8,8 @@
                 <div class="md:w-1/2 px-7 mb-16">
                     <h2 class="font-bold text-lg text-sky-dark mb-7">Доставка вам домой или на работу - курьером</h2>
                     <p class="mt-7 mb-3">Для <span class="font-bold">Москвы и Московской области</span> доступна быстрая курьерская доставка в следующие временные интервалы:</p>
-                    <p class="mb-3 ml-5 lg:ml-14">10:00 – 18:00, 14:00 – 21:00 или 18:00 – 22:00 – для Москвы</p>
-                    <p class="mb-3 ml-5 lg:ml-14">10:00 – 22:00 – для Московской области</p>
+                    <p class="mb-3 ml-5 lg:ml-9 pl-10 bg-green-arrow bg-no-repeat bg-left-top">10:00 – 18:00, 14:00 – 21:00 или 18:00 – 22:00 – для Москвы</p>
+                    <p class="mb-3 ml-5 lg:ml-9 pl-10 bg-green-arrow bg-no-repeat bg-left-top">10:00 – 22:00 – для Московской области</p>
                     <p>А при оформлении и подтверждении заказа до 20:00 курьер привезёт его вам уже на следующий день!</p>
                 </div>
                 <div class="md:w-1/2 px-6 mb-16">
@@ -18,24 +18,24 @@
                     <p>Практически в любом городе России доступно большое количество точек самовывоза – выберите самую удобную!</p>
                 </div>
                 <div class="w-1/2 flex flex-wrap justify-around mb-10 md:mb-16">
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/iml.png" alt="iml">
                     </div>
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/cdek.png" alt="cdek">
                     </div>
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/boxberry.png" alt="boxberry">
                     </div>
                 </div>
                 <div class="w-1/2 flex flex-wrap justify-around mb-10 md:mb-16">
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/dellin.png" alt="dellin">
                     </div>
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/pek.png" alt="pek">
                     </div>
-                    <div class="my-auto mr-7">
+                    <div class="my-auto mr-7 mb-5">
                         <img src="/img/delivery_companies_logos/geldor.png" alt="geldor">
                     </div>
                 </div>
@@ -57,9 +57,9 @@
                 <div class="md:w-2/3 px-6 mb-16 mx-auto">
                     <h3 class="font-bold text-lg text-sky-dark mb-7">Обращаем внимание:</h3>
                     <div class="pr-3">
-                        <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left">В настоящий момент окончательная стоимость доставки рассчитывается менеджером при оформлении заказа</p>
-                        <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left">Доставка некоторыми транспортными компаниями возможна только со 100% предоплатой заказа</p>
-                        <p class="pl-10 bg-green-arrow bg-no-repeat bg-left">В <span class="font-bold">регионах</span> доставка силами курьерских компаний возможна по согласованию</p>
+                        <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left-top">В настоящий момент окончательная стоимость доставки рассчитывается менеджером при оформлении заказа</p>
+                        <p class="mb-3 pl-10 bg-green-arrow bg-no-repeat bg-left-top">Доставка некоторыми транспортными компаниями возможна только со 100% предоплатой заказа</p>
+                        <p class="pl-10 bg-green-arrow bg-no-repeat bg-left-top">В <span class="font-bold">регионах</span> доставка силами курьерских компаний возможна по согласованию</p>
                     </div>
                 </div>
             </div>

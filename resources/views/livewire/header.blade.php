@@ -9,7 +9,7 @@
                     </a>
                 </div>
                 <div class="flex flex-grow-0 justify-between items-center">
-                    <a href="/"><img src="/img/logo.png" alt=""></a>
+                    <a href="{{ route('dashboard') }}"><img src="/img/logo.png" alt=""></a>
                 </div>
                 <div class="flex flex-grow items-center justify-end w-1/3">
                     <a href="/cart"><img src="/img/icon/supermarket.png" alt=""></a>
@@ -47,10 +47,10 @@
                         class="absolute inset-0"
                     >
                         <div class="border-graphite-light text-graphite border transition duration-150 ease-in-out bg-white">
-                            <a href="{{ route('offers') }}" class="block cursor-pointer mt-16 py-5 hover:bg-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'offers' }">
+                            <a href="{{ route('offers') }}" class="block cursor-pointer mt-16 py-5 hover:bg-forest-light focus:text-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'offers' }">
                                 {{ __('Offers') }}
                             </a>
-                            <a href="{{ route('news') }}" class="block cursor-pointer py-5 hover:bg-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'news' }">
+                            <a href="{{ route('news') }}" class="block cursor-pointer py-5 hover:bg-forest-light focus:text-forest" x-bind:class="{ 'cursor-default bg-sand hover:bg-sand': $wire.activeMenu === 'news' }">
                                 {{ __('News') }}
                             </a>
                         </div>

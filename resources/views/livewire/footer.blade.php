@@ -66,10 +66,10 @@
                         {{ __('Contacts') }}
                     </li>
                     <li class="mb-3">
-                        <a class="mb-10" href="{{ config('config.goodion_phone_link') }}">{{ config('config.goodion_phone') }}</a>
+                        <a class="mb-10 hover:underline" href="{{ config('config.goodion_phone_link') }}">{{ config('config.goodion_phone') }}</a>
                     </li>
                     <li class="mb-3">
-                        <a class="mb-10" href="{{ config('config.goodion_email_link') }}">{{ config('config.goodion_email') }}</a>
+                        <a class="mb-10 hover:underline" href="{{ config('config.goodion_email_link') }}">{{ config('config.goodion_email') }}</a>
                     </li>
                     <li class="flex flex-row items-center justify-between mb-5">
                         <a class="mr-2" href="{{ config('config.goodion_whatsapp') }}" target="_blank">
