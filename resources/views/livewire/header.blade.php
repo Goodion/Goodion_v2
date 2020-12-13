@@ -1,4 +1,4 @@
-<header>
+<header class="sticky top-0 sm:static bg-white">
     <div class="container xl:px-13 mx-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-28">

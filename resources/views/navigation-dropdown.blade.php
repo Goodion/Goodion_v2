@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div class="m-auto font-medium text-sm">
-                <a class="text-white hover:border-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:border-graphite-light" href="{{ config('config.goodion_phone_link') }}">{{ config('config.goodion_phone') }}</a>
+                <a class="hidden sm:inline-block text-white hover:border-graphite-light hover:text-graphite-light focus:outline-none focus:text-graphite-light focus:border-graphite-light" href="{{ config('config.goodion_phone_link') }}">{{ config('config.goodion_phone') }}</a>
             </div>
 
             <!-- Settings Dropdown -->
@@ -119,8 +119,8 @@
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden flex flex-grow items-center inline-block justify-end w-1/3">
-                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md graphite hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md white hover:text-graphite-light hover:bg-graphite focus:outline-none focus:bg-graphite focus:text-graphite-light transition duration-150 ease-in-out">
+                    <svg class="h-6 w-6" stroke="white" fill="none" viewBox="0 0 24 24">
                         <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -163,13 +163,15 @@
         @auth
             <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="flex items-center px-4">
-                <div class="flex-shrink-0">
-                    <img class="h-10 w-10 rounded-full" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
-                </div>
+                @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                    <div class="flex-shrink-0">
+                        <img class="h-10 w-10 rounded-full" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                    </div>
+                @endif
 
                 <div class="ml-3">
-                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                    <div class="font-medium text-base text-graphite-light">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-graphite-light">{{ Auth::user()->email }}</div>
                 </div>
             </div>
 
